@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Princess Parages | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">Princess</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <div class="home-text fade-in">
+        <h1>Hi! I’m Princess, <span id="typewriter"></span></h1>
+        <p>Welcome to my digital portfolio! I’m Princess, a skilled Computer Science student who codes with purpose and competes with heart. Let's build something awesome together.</p>
+        <a href="#contact" id="hireMe" class="btn slide-in-left">Hire Me</a>
+        <div class="social-icons fade-in">
+          <a href="https://github.com/cess-m" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="30"/>
+          </a>
+          <a href="https://facebook.com/PrincessParages" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="30"/>
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="30"/>
+          </a>
+        </div>
+      </div>
+      <div class="home-image slide-in-right">
+        <img src="images/Parages, Princess_Picture.png" alt="Princess Parages" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about-section">
+    <h2 class="fade-in">About Me <span class="section-icon">👩‍💻</span></h2>
+    <p class="fade-in">
+      I'm Princess Mae B. Parages, a 3rd-year Computer Science student at the University of the Philippines Cebu. I specialize in software engineering projects with a focus on full-stack development and user-centric design. As a member of the UP Cebu Athletics and Arnis Teams, I’ve learned the value of discipline, resilience, and teamwork—qualities that carry over to how I approach code. Whether I’m debugging a program or running a race, I bring the same energy and commitment.
+    </p>
+    <a href="Parages, Princess_Resume.pdf" download class="btn fade-in">Download Resume</a>
+    <h3 class="fade-in">Fun Facts</h3>
+    <div class="photo-collage slide-in-right">
+      <img src="images/sttp1.jpg" alt="Running" />
+      <img src="images/for arnis.jpg" alt="Arnis" />
+      <img src="images/kompsciweek.jpg" alt="Running 2" />
+      <img src="images/running.jpg" alt="Running 2" />
+    </div>
+    <p class="collage-caption fade-in" style="color: inherit; text-align: center;">
+      <strong>I love adventure, building software projects, and representing UP Cebu in competitions!
+    </p>
+  </section>
+  
+  <section id="skills" class="section">
+    <h2 class="fade-in">Skills <span class="section-icon">🛠️</span></h2>
+  
+    <h3 class="skills-category fade-in">Frontend</h3>
+    <div class="skills-grid">
+      <div class="skill slide-in-left" title="Used for structuring and styling web pages.">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="40" />
+        HTML/CSS
+      </div>
+      <div class="skill slide-in-right" title="Scripting language for interactive interfaces.">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" />
+        JavaScript
+      </div>
+      <div class="skill slide-in-left" title="Popular JavaScript library for UI development.">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="40" />
+        React (MERN Stack)
+      </div>
+      <div class="skill slide-in-right" title="Design prototyping and wireframing.">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" width="40" />
+        UI/UX (Figma, Canva)
+      </div>
+    </div>
+  
+    <h3 class="skills-category fade-in">Backend & Logic</h3>
+    <div class="skills-grid">
+      <div class="skill slide-in-left" title="Server-side scripting and automation.">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40" />
+        Python
+      </div>
+      <div class="skill slide-in-right" title="Database design and queries.">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" width="40" />
+        SQL
+      </div>
+      <div class="skill slide-in-left" title="Low-level programming and system logic.">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C/C++" width="40" />
+        C/C++
+      </div>
+    </div>
+  
+    <h3 class="skills-category fade-in">Tools & Platforms</h3>
+    <div class="skills-grid">
+      <div class="skill slide-in-right" title="Version control and source management.">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="40" />
+        Git & VS Code
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="slide-in-left">Projects <span class="section-icon">📁</span></h2>
+    <div class="projects-grid">
+  
+      <div class="project fade-in">
+        <img src="images/honey.png" alt="Honey OS Icon" class="project-icon-img large-icon" />
+        <div class="project-text">
+          <h3>Honey OS</h3>
+          <p>Educational OS simulator using HTML, CSS, and JavaScript. Features a visual memory manager, task scheduler, and notepad for learning OS concepts interactively.</p>
+          <div class="project-footer">
+            <a href="https://github.com/cess-m/HONEY-OS" class="project-btn" target="_blank">View Code / Demo</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="project fade-in">
+        <img src="images/SPORTAL.png" alt="SPORTAL Icon" class="project-icon-img large-icon" />
+        <div class="project-text">
+          <h3>SPORTAL</h3>
+          <p>Web-based platform for organizing sports tournaments with features for registration, scheduling, bracket creation, and role-based access. Built using HTML/CSS/JS and SQL.</p>
+          <div class="project-footer">
+            <a href="#" class="project-btn" target="_blank">View Code / Demo</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="project fade-in">
+        <img src="images/books.png" alt="Lib System icon" class="project-icon-img" height="150px" width="160px" />
+        <div class="project-text">
+          <h3>Library Management System</h3>
+          <p>Multi-table CRUD application using SQL and PHP. Manages book inventories, borrowing transactions, and user accounts with search and filter functions.</p>
+          <div class="project-footer">
+            <a href="#" class="project-btn" target="_blank">View Code / Demo</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="project fade-in">
+        <img src="images/bot.png" alt="Wish icon" class="project-icon-img large-icon" />
+        <div class="project-text">
+          <h3>Wish 107.5 Robot Vehicle</h3>
+          <p>Line-following robot inspired by the Wish 107.5 Bus. Uses IR sensors and Karnaugh map logic for path detection. Hardware and circuit design by team.</p>
+          <div class="project-footer">
+            <a href="#" class="project-btn" target="_blank">View Code / Demo</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="project fade-in">
+        <img src="images/pikachu.png" alt="pokemon icon" class="project-icon-img" height="150px" width="160px" />
+        <div class="project-text">
+          <h3>UPokemon Game</h3>
+          <p>Turn-based C/C++ console game with custom battle mechanics, save/load functions, and file I/O. Inspired by Pokémon-style gameplay.</p>
+          <div class="project-footer">
+            <a href="#" class="project-btn" target="_blank">View Code / Demo</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="project fade-in">
+        <img src="images/ship.png" alt="Cyber icon" class="project-icon-img" height="150px" width="160px" />
+        <div class="project-text">
+          <h3>Cyber Command: Mainframe Battle</h3>
+          <p>Strategy board game app in Flutter based on Game of the Generals. Offers PvP and AI modes using Minimax algorithm. Involved in UI layout and testing.</p>
+          <div class="project-footer">
+            <a href="#" class="project-btn" target="_blank">View Code / Demo</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>  
+
+<section id="contact" class="section">
+  <h2 class="fade-in">Contact Me <span class="section-icon">📬</span></h2>
+  <p class="section-subtitle fade-in">Feel free to message me for collaboration, freelance work, or just to say hi!</p>
+  
+  <div class="contact-wrapper fade-in">
+    <div class="contact-form">
+      <form action="#" method="post">
+        <div class="input-group">
+          <span>👤</span>
+          <input type="text" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="input-group">
+          <span>📧</span>
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="input-group">
+          <span>💬</span>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" style="align-self: center;">Send Message</button>
+      </form>
+    </div>
+
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps?q=University+of+the+Philippines+Cebu&output=embed"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Princess Mae B. Parages</p>
+    <p>Email: pbparages@up.edu.ph | GitHub: <a href="https://github.com/cess-m" target="_blank">cess-m</a></p>
+    <button id="themeToggle">Toggle Theme</button>
+  </footer>
+</body>
+</html>
