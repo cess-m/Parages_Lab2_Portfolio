@@ -2,10 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.getElementById("themeToggle");
   const body = document.body;
 
+
   // Toggle dark mode
   toggleButton?.addEventListener("click", () => {
     body.classList.toggle("dark");
   });
+
 
   // Smooth scroll for nav links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -16,10 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });  
 
+
   // "Hire Me" button scrolls to contact
   document.getElementById("hireMe")?.addEventListener("click", () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   });
+
 
   // Glow + scroll animation effect for sections
   const observer = new IntersectionObserver(entries => {
@@ -31,9 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }, { threshold: 0.2 });
 
+
   document.querySelectorAll(".section").forEach(section => {
     observer.observe(section);
   });
+
 
   // Animate individual fade/slide elements on scroll
   const animatable = document.querySelectorAll(".fade-in, .slide-in-left, .slide-in-right");
@@ -46,7 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }, { threshold: 0.3 });
 
+
   animatable.forEach(el => animObserver.observe(el));
+
 
   // Typewriter effect
   const roles = [
@@ -56,11 +64,13 @@ document.addEventListener("DOMContentLoaded", function () {
     "a sport enthusiast"
   ];
 
+
   let index = 0;
   let charIndex = 0;
   const speed = 90;
   const pause = 1300;
   const typewriter = document.getElementById("typewriter");
+
 
   function type() {
     if (!typewriter) return;
@@ -74,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+
   function erase() {
     if (!typewriter) return;
     if (charIndex > 0) {
@@ -85,15 +96,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+
   if (typewriter) type();
 });
+
 
 // Auto-highlight nav link on scroll
 window.addEventListener("scroll", () => {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".navbar a");
 
+
   let current = "";
+
 
   sections.forEach((section) => {
     const sectionTop = section.offsetTop - 150;
@@ -102,6 +117,7 @@ window.addEventListener("scroll", () => {
     }
   });
 
+
   navLinks.forEach((link) => {
     link.classList.remove("active");
     if (link.getAttribute("href") === `#${current}`) {
@@ -109,4 +125,5 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
 

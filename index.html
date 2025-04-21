@@ -10,7 +10,8 @@
 <body>
   <nav class="navbar">
     <div class="nav-brand">Princess</div>
-    <ul>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -18,6 +19,7 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
+
 
   <section id="home" class="home-section">
     <div class="home-content">
@@ -38,10 +40,11 @@
         </div>
       </div>
       <div class="home-image slide-in-right">
-        <img src="images/Parages, Princess_Picture.png" alt="Princess Parages" />
+        <img src="images/princess-parages.png" alt="Princess Parages" />
       </div>
     </div>
   </section>
+
 
   <section id="about" class="section about-section">
     <h2 class="fade-in">About Me <span class="section-icon">👩‍💻</span></h2>
@@ -60,10 +63,10 @@
       <strong>I love adventure, building software projects, and representing UP Cebu in competitions!
     </p>
   </section>
-  
+ 
   <section id="skills" class="section">
     <h2 class="fade-in">Skills <span class="section-icon">🛠️</span></h2>
-  
+ 
     <h3 class="skills-category fade-in">Frontend</h3>
     <div class="skills-grid">
       <div class="skill slide-in-left" title="Used for structuring and styling web pages.">
@@ -83,7 +86,7 @@
         UI/UX (Figma, Canva)
       </div>
     </div>
-  
+ 
     <h3 class="skills-category fade-in">Backend & Logic</h3>
     <div class="skills-grid">
       <div class="skill slide-in-left" title="Server-side scripting and automation.">
@@ -99,7 +102,7 @@
         C/C++
       </div>
     </div>
-  
+ 
     <h3 class="skills-category fade-in">Tools & Platforms</h3>
     <div class="skills-grid">
       <div class="skill slide-in-right" title="Version control and source management.">
@@ -109,10 +112,10 @@
     </div>
   </section>
 
+
   <section id="projects" class="section">
     <h2 class="slide-in-left">Projects <span class="section-icon">📁</span></h2>
     <div class="projects-grid">
-  
       <div class="project fade-in">
         <img src="images/honey.png" alt="Honey OS Icon" class="project-icon-img large-icon" />
         <div class="project-text">
@@ -123,7 +126,7 @@
           </div>
         </div>
       </div>
-  
+ 
       <div class="project fade-in">
         <img src="images/SPORTAL.png" alt="SPORTAL Icon" class="project-icon-img large-icon" />
         <div class="project-text">
@@ -134,7 +137,7 @@
           </div>
         </div>
       </div>
-  
+ 
       <div class="project fade-in">
         <img src="images/books.png" alt="Lib System icon" class="project-icon-img" height="150px" width="160px" />
         <div class="project-text">
@@ -145,7 +148,7 @@
           </div>
         </div>
       </div>
-  
+ 
       <div class="project fade-in">
         <img src="images/bot.png" alt="Wish icon" class="project-icon-img large-icon" />
         <div class="project-text">
@@ -156,7 +159,7 @@
           </div>
         </div>
       </div>
-  
+ 
       <div class="project fade-in">
         <img src="images/pikachu.png" alt="pokemon icon" class="project-icon-img" height="150px" width="160px" />
         <div class="project-text">
@@ -178,14 +181,15 @@
           </div>
         </div>
       </div>
-  
+ 
     </div>
   </section>  
+
 
 <section id="contact" class="section">
   <h2 class="fade-in">Contact Me <span class="section-icon">📬</span></h2>
   <p class="section-subtitle fade-in">Feel free to message me for collaboration, freelance work, or just to say hi!</p>
-  
+ 
   <div class="contact-wrapper fade-in">
     <div class="contact-form">
       <form action="#" method="post">
@@ -205,6 +209,7 @@
       </form>
     </div>
 
+
     <div class="contact-map">
       <iframe
         src="https://www.google.com/maps?q=University+of+the+Philippines+Cebu&output=embed"
@@ -219,10 +224,17 @@
   </div>
 </section>
 
+
   <footer>
     <p>&copy; 2025 Princess Mae B. Parages</p>
     <p>Email: pbparages@up.edu.ph | GitHub: <a href="https://github.com/cess-m" target="_blank">cess-m</a></p>
     <button id="themeToggle">Toggle Theme</button>
   </footer>
 </body>
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('.nav-links');
+    nav.classList.toggle('show');
+  }
+</script>
 </html>
