@@ -6,6 +6,7 @@
   <title>Princess Parages | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
+
 </head>
 <body>
   <nav class="navbar">
@@ -192,7 +193,7 @@
  
   <div class="contact-wrapper fade-in">
     <div class="contact-form">
-      <form action="#" method="post">
+      <form action="https://formsubmit.co/princessparages@gmail.com" method="POST">
         <div class="input-group">
           <span>👤</span>
           <input type="text" name="name" placeholder="Your Name" required />
@@ -205,7 +206,16 @@
           <span>💬</span>
           <textarea name="message" placeholder="Your Message" required></textarea>
         </div>
-        <button type="submit" style="align-self: center;">Send Message</button>
+      
+        <!-- Hidden inputs for extras -->
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_autoresponse" value="Hi! Thank you for reaching out. I’ll get back to you soon. — Princess 👩‍💻">
+        <input type="hidden" name="_next" value="https://cess-m.github.io/Parages_Lab2_Portfolio/#contact">
+      
+        <div class="captcha-and-button">
+          <button type="submit">Send Message</button>
+        </div>
       </form>
     </div>
 
@@ -230,11 +240,15 @@
     <p>Email: pbparages@up.edu.ph | GitHub: <a href="https://github.com/cess-m" target="_blank">cess-m</a></p>
     <button id="themeToggle">Toggle Theme</button>
   </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.nav-links');
+      nav.classList.toggle('show');
+    }
+  
+    function onSubmit(token) {
+      document.getElementById("contactForm").submit();
+    }
+  </script>
 </body>
-<script>
-  function toggleMenu() {
-    const nav = document.querySelector('.nav-links');
-    nav.classList.toggle('show');
-  }
-</script>
 </html>

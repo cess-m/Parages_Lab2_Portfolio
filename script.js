@@ -96,6 +96,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  if (window.location.href.includes("#contact")) {
+    const formWrapper = document.querySelector(".contact-form");
+    const thankYou = document.createElement("p");
+    thankYou.textContent = "✅ Message sent! Thanks for reaching out 💌";
+    thankYou.style.textAlign = "center";
+    thankYou.style.color = "green";
+    thankYou.style.fontWeight = "bold";
+    thankYou.style.marginTop = "1rem";
+    formWrapper?.appendChild(thankYou);
+
+    // Optional: auto-hide after 5 seconds
+    setTimeout(() => thankYou.remove(), 5000);
+  }
 
   if (typewriter) type();
 });

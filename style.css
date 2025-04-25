@@ -1147,6 +1147,27 @@ body.dark .input-group span {
     display: flex;
   }
 
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 0;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    background-color: #124bc6;
+    color: white;
+  }
+
+  .nav-links a:active {
+    background-color: #0e3ca1;
+    transform: scale(0.98);
+  }
 
   .navbar {
     flex-wrap: wrap;
@@ -1165,6 +1186,36 @@ body.dark .input-group span {
   }
 }
 
+.captcha-and-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* spacing between captcha and button */
+  margin-top: 1.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.captcha-and-button button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.captcha-and-button button:hover {
+  background-color: #0ea5e9;
+}
+
+.g-recaptcha {
+  margin-top: 1.5rem;
+  width: 100%;  /* Ensure it's responsive */
+  max-width: 304px;  /* Set a max-width so it doesn't overflow */
+}
 
 @keyframes blink-caret {
   from, to { border-color: transparent; }
