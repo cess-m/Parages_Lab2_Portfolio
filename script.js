@@ -4,9 +4,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // Toggle dark mode
-  toggleButton?.addEventListener("click", () => {
-    body.classList.toggle("dark");
-  });
+  if (toggleButton) {
+    // Check saved theme preference
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      body.classList.add("dark");
+      toggleButton.textContent = "🌞";
+    }
+  
+    toggleButton.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      const isDark = body.classList.contains("dark");
+      toggleButton.textContent = isDark ? "🌞" : "🌙";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    
+      // Add spin animation
+      toggleButton.classList.add("clicked");
+      setTimeout(() => toggleButton.classList.remove("clicked"), 600); // remove after animation
+    });
+  }
 
 
   // Smooth scroll for nav links

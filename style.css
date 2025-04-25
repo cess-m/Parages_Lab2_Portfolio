@@ -107,6 +107,46 @@ body.dark .social-icons a img[src*="github"] {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.theme-toggle-icon {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1rem;
+  z-index: 9999;
+  cursor: pointer;
+  font-size: clamp(1.2rem, 2vw, 1.6rem); /* responsive size */
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle-icon:hover {
+  transform: scale(1.15);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+body.dark .theme-toggle-icon {
+  color: #facc15; /* yellow for sun */
+}
+
+@media screen and (max-width: 600px) {
+  .theme-toggle-icon {
+    bottom: 1.2rem;
+    top: auto;
+    right: 1.2rem;
+  }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.theme-toggle-icon.clicked {
+  animation: spin 0.6s ease forwards;
+}
 
 .nav-brand {
   font-weight: 700;
@@ -948,7 +988,7 @@ body.dark .input-group textarea:focus {
 }
 
 .section-icon {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.2rem, 2.5vw, 2rem); 
   margin-left: 0.5rem;
   vertical-align: middle;
 }
